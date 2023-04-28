@@ -1,5 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.aditi_news">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
    <application
         android:label="aditi_news"
         android:name="${applicationName}"

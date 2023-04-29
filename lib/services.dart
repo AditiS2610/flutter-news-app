@@ -6,9 +6,9 @@ class WebServices {
 static Logger logger = Logger();
 
   // Method to fetch latest news
-  static Future<Response> fetchLatestNews () async{
+  static Future<Response> fetchLatestNews ({required String searchKey}) async{
     try{
-      String string = "india";
+      String string = searchKey;
       DateTime now =  DateTime.now().subtract(const Duration(days: 1));
     DateTime date =  DateTime(now.year, now.month, now.day);
 
